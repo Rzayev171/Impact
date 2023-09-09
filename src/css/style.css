@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#second-header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: #008374;
+}
+#second-header .second-header-container {
+  width: 1320px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+#second-header .second-header-container .impact-holder {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+#second-header .second-header-container .impact-holder h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+#second-header .second-header-container .impact-holder h1 span {
+  color: #f96f59;
+}
+#second-header #second-header-navbar {
+  height: 44px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#second-header #second-header-navbar ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0 !important;
+  list-style-type: none;
+}
+#second-header #second-header-navbar ul li {
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
+  display: list-item;
+  position: relative;
+}
+#second-header #second-header-navbar ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+  text-decoration: none;
+}
+#second-header #second-header-navbar ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #f85a40;
+  transition: all 0.3s ease-in-out 0s;
+}
+#second-header #second-header-navbar ul li a:hover {
+  color: #fff;
+}
+#second-header #second-header-navbar ul li a:hover::before {
+  width: 100%;
+}
+#second-header #second-header-navbar ul li a i {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+}
+#second-header #second-header-navbar ul li .a-for-home {
+  color: #fff;
+}
+#second-header #second-header-navbar ul li .a-for-home::before {
+  width: 100%;
+}
+#second-header #second-header-navbar ul .li-dropdown ul {
+  width: 200px;
+  height: 232.5px;
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: calc(100% + 0px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  flex-wrap: wrap;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+#second-header #second-header-navbar ul .li-dropdown ul li {
+  padding: 0;
+  position: relative;
+}
+#second-header #second-header-navbar ul .li-dropdown ul li a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+  font-weight: 600;
+  color: #006a5d;
+  display: flex;
+  align-items: center;
+}
+#second-header #second-header-navbar ul .li-dropdown ul li a:hover {
+  color: #f85a40;
+}
+#second-header #second-header-navbar ul .li-dropdown ul li a::before {
+  width: 0;
+}
+#second-header #second-header-navbar ul .li-dropdown ul .li-dropdown {
+  position: relative;
+}
+#second-header #second-header-navbar ul .li-dropdown ul .li-dropdown ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+}
+#second-header #second-header-navbar ul .li-dropdown ul .li-dropdown:hover ul {
+  opacity: 1;
+}
+#second-header #second-header-navbar ul .li-dropdown:hover ul {
+  opacity: 1;
+}
+
+#hero {
+  width: 100%;
+  position: relative;
+  background: #008374;
+  background-attachment: fixed;
+  padding: 60px 0 0 0;
+}
+#hero .row.gy-5 h2 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Montserrat-bold", sans-serif;
+  margin-bottom: 20px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+#hero .row.gy-5 p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#hero .row.gy-5 .button-get-started {
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+#hero .row.gy-5 .button-get-started:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+#hero .row.gy-5 .button-watch-video {
+  display: flex;
+  align-items: center !important;
+  font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+#hero .row.gy-5 .button-watch-video i {
+  width: 32px;
+  height: 32px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
+  text-decoration: none;
+}
+#hero .row.gy-5 .button-watch-video span {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#hero .row.gy-5 .button-watch-video:hover i {
+  color: #fff;
+}
+#hero .icon-boxes {
+  padding-bottom: 60px;
+}
+#hero .icon-boxes::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(50% + 20px);
+  background-color: #fff;
+}
+#hero .icon-boxes .icon-box {
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #008d7d;
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+#hero .icon-boxes .icon-box:hover {
+  background: #029886;
+}
+#hero .icon-boxes .icon-box:hover .icon {
+  color: #fff;
+}
+#hero .icon-boxes .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 48px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.6);
+}
+#hero .icon-boxes .icon-box .icon svg {
+  width: 48px;
+  height: 48px;
+}
+#hero .icon-boxes .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-family: "Montserrat-bold", sans-serif;
+  line-height: 1.2;
+  color: #fff;
+}
+#hero .icon-boxes .icon-box .title a {
+  color: #fff;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
